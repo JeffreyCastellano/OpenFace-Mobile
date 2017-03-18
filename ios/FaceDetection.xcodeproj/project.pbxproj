@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C302F9321D550E2E00AB049D /* SetLogEnabledFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C302F9311D550E2E00AB049D /* SetLogEnabledFunction.m */; };
+		C302F9351D550EF000AB049D /* DetectFacesFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C302F9341D550EF000AB049D /* DetectFacesFunction.m */; };
+		C302F93A1D55106200AB049D /* FaceDetectionHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C302F9391D55106200AB049D /* FaceDetectionHelper.mm */; };
+		C302F93D1D57238A00AB049D /* IsAvailableFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C302F93C1D57238A00AB049D /* IsAvailableFunction.m */; };
+		C302F9401D5723E500AB049D /* IsOperationalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C302F93F1D5723E500AB049D /* IsOperationalFunction.m */; };
+		C3073AE41BE2C77C00EC89B7 /* FaceDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = C3073AD71BE2C77C00EC89B7 /* FaceDetection.m */; };
+		C37509FA1C79388900516C15 /* AIRExtHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37509F91C79388900516C15 /* AIRExtHelpers.framework */; };
+		DC240CD81D6E9C0800763774 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC240CD71D6E9C0800763774 /* opencv2.framework */; };
+		DC240CDA1D6E9C3900763774 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC240CD91D6E9C3900763774 /* AssetsLibrary.framework */; };
+		DC240CF21D6EB18D00763774 /* CCNF_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC240CE71D6EB18D00763774 /* CCNF_patch_expert.cpp */; };
+		DC240CF31D6EB18D00763774 /* LandmarkDetectionValidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC240CE81D6EB18D00763774 /* LandmarkDetectionValidator.cpp */; };
+		DC240CF41D6EB18D00763774 /* LandmarkDetectorFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC240CE91D6EB18D00763774 /* LandmarkDetectorFunc.cpp */; };
+		DC240CF51D6EB18D00763774 /* LandmarkDetectorModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC240CEA1D6EB18D00763774 /* LandmarkDetectorModel.cpp */; };
+		DC240CF61D6EB18D00763774 /* LandmarkDetectorParameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC240CEB1D6EB18D00763774 /* LandmarkDetectorParameters.cpp */; };
+		DC240CF71D6EB18D00763774 /* LandmarkDetectorUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC240CEC1D6EB18D00763774 /* LandmarkDetectorUtils.cpp */; };
+		DC240CF81D6EB18D00763774 /* Patch_experts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC240CED1D6EB18D00763774 /* Patch_experts.cpp */; };
+		DC240CF91D6EB18D00763774 /* PAW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC240CEE1D6EB18D00763774 /* PAW.cpp */; };
+		DC240CFA1D6EB18D00763774 /* PDM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC240CEF1D6EB18D00763774 /* PDM.cpp */; };
+		DC240CFB1D6EB18D00763774 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC240CF01D6EB18D00763774 /* stdafx.cpp */; };
+		DC240CFC1D6EB18D00763774 /* SVR_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC240CF11D6EB18D00763774 /* SVR_patch_expert.cpp */; };
+		DC240CFE1D6EB42F00763774 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC240CFD1D6EB42F00763774 /* AVFoundation.framework */; };
+		DC240D001D6EB43A00763774 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC240CFF1D6EB43A00763774 /* CoreData.framework */; };
+		DC7C019B1D68E23200E02CB4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C019A1D68E23200E02CB4 /* CoreFoundation.framework */; };
+		DC7C019D1D68E36500E02CB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C019C1D68E36500E02CB4 /* UIKit.framework */; };
+		DC8261791D6ED697006F0901 /* Face_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC82616B1D6ED697006F0901 /* Face_utils.cpp */; };
+		DC82617A1D6ED697006F0901 /* FaceAnalyser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC82616C1D6ED697006F0901 /* FaceAnalyser.cpp */; };
+		DC82617B1D6ED697006F0901 /* GazeEstimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC82616D1D6ED697006F0901 /* GazeEstimation.cpp */; };
+		DC82617C1D6ED697006F0901 /* SVM_dynamic_lin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC82616E1D6ED697006F0901 /* SVM_dynamic_lin.cpp */; };
+		DC82617D1D6ED697006F0901 /* SVM_static_lin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC82616F1D6ED697006F0901 /* SVM_static_lin.cpp */; };
+		DC82617E1D6ED697006F0901 /* SVR_dynamic_lin_regressors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC8261701D6ED697006F0901 /* SVR_dynamic_lin_regressors.cpp */; };
+		DC82617F1D6ED697006F0901 /* SVR_static_lin_regressors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC8261711D6ED697006F0901 /* SVR_static_lin_regressors.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C35331DC1B7BCE8A003A7521 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C302F9301D550E2E00AB049D /* SetLogEnabledFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetLogEnabledFunction.h; sourceTree = "<group>"; };
+		C302F9311D550E2E00AB049D /* SetLogEnabledFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetLogEnabledFunction.m; sourceTree = "<group>"; };
+		C302F9331D550EF000AB049D /* DetectFacesFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectFacesFunction.h; sourceTree = "<group>"; };
+		C302F9341D550EF000AB049D /* DetectFacesFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectFacesFunction.m; sourceTree = "<group>"; };
+		C302F9361D550FC600AB049D /* FaceDetectionEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceDetectionEvent.h; sourceTree = "<group>"; };
+		C302F9381D55106200AB049D /* FaceDetectionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FaceDetectionHelper.h; path = Utils/FaceDetectionHelper.h; sourceTree = "<group>"; };
+		C302F9391D55106200AB049D /* FaceDetectionHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FaceDetectionHelper.mm; path = Utils/FaceDetectionHelper.mm; sourceTree = "<group>"; };
+		C302F93B1D57238A00AB049D /* IsAvailableFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsAvailableFunction.h; sourceTree = "<group>"; };
+		C302F93C1D57238A00AB049D /* IsAvailableFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsAvailableFunction.m; sourceTree = "<group>"; };
+		C302F93E1D5723E500AB049D /* IsOperationalFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsOperationalFunction.h; sourceTree = "<group>"; };
+		C302F93F1D5723E500AB049D /* IsOperationalFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsOperationalFunction.m; sourceTree = "<group>"; };
+		C3073AD61BE2C77C00EC89B7 /* FaceDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetection.h; sourceTree = "<group>"; };
+		C3073AD71BE2C77C00EC89B7 /* FaceDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetection.m; sourceTree = "<group>"; };
+		C35331DE1B7BCE8A003A7521 /* libFaceDetection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFaceDetection.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37509F91C79388900516C15 /* AIRExtHelpers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AIRExtHelpers.framework; sourceTree = "<group>"; };
+		DC240CD71D6E9C0800763774 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		DC240CD91D6E9C3900763774 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AssetsLibrary.framework; sourceTree = "<group>"; };
+		DC240CDB1D6EB18500763774 /* CCNF_patch_expert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNF_patch_expert.h; sourceTree = "<group>"; };
+		DC240CDC1D6EB18500763774 /* LandmarkCoreIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandmarkCoreIncludes.h; sourceTree = "<group>"; };
+		DC240CDD1D6EB18500763774 /* LandmarkDetectionValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandmarkDetectionValidator.h; sourceTree = "<group>"; };
+		DC240CDE1D6EB18500763774 /* LandmarkDetectorFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandmarkDetectorFunc.h; sourceTree = "<group>"; };
+		DC240CDF1D6EB18500763774 /* LandmarkDetectorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandmarkDetectorModel.h; sourceTree = "<group>"; };
+		DC240CE01D6EB18500763774 /* LandmarkDetectorParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandmarkDetectorParameters.h; sourceTree = "<group>"; };
+		DC240CE11D6EB18500763774 /* LandmarkDetectorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandmarkDetectorUtils.h; sourceTree = "<group>"; };
+		DC240CE21D6EB18500763774 /* Patch_experts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patch_experts.h; sourceTree = "<group>"; };
+		DC240CE31D6EB18500763774 /* PAW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAW.h; sourceTree = "<group>"; };
+		DC240CE41D6EB18500763774 /* PDM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDM.h; sourceTree = "<group>"; };
+		DC240CE51D6EB18500763774 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		DC240CE61D6EB18500763774 /* SVR_patch_expert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVR_patch_expert.h; sourceTree = "<group>"; };
+		DC240CE71D6EB18D00763774 /* CCNF_patch_expert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCNF_patch_expert.cpp; sourceTree = "<group>"; };
+		DC240CE81D6EB18D00763774 /* LandmarkDetectionValidator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandmarkDetectionValidator.cpp; sourceTree = "<group>"; };
+		DC240CE91D6EB18D00763774 /* LandmarkDetectorFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandmarkDetectorFunc.cpp; sourceTree = "<group>"; };
+		DC240CEA1D6EB18D00763774 /* LandmarkDetectorModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandmarkDetectorModel.cpp; sourceTree = "<group>"; };
+		DC240CEB1D6EB18D00763774 /* LandmarkDetectorParameters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandmarkDetectorParameters.cpp; sourceTree = "<group>"; };
+		DC240CEC1D6EB18D00763774 /* LandmarkDetectorUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandmarkDetectorUtils.cpp; sourceTree = "<group>"; };
+		DC240CED1D6EB18D00763774 /* Patch_experts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Patch_experts.cpp; sourceTree = "<group>"; };
+		DC240CEE1D6EB18D00763774 /* PAW.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PAW.cpp; sourceTree = "<group>"; };
+		DC240CEF1D6EB18D00763774 /* PDM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PDM.cpp; sourceTree = "<group>"; };
+		DC240CF01D6EB18D00763774 /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
+		DC240CF11D6EB18D00763774 /* SVR_patch_expert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVR_patch_expert.cpp; sourceTree = "<group>"; };
+		DC240CFD1D6EB42F00763774 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DC240CFF1D6EB43A00763774 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DC7C019A1D68E23200E02CB4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreFoundation.framework; sourceTree = "<group>"; };
+		DC7C019C1D68E36500E02CB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIKit.framework; sourceTree = "<group>"; };
+		DC82616B1D6ED697006F0901 /* Face_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Face_utils.cpp; sourceTree = "<group>"; };
+		DC82616C1D6ED697006F0901 /* FaceAnalyser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FaceAnalyser.cpp; sourceTree = "<group>"; };
+		DC82616D1D6ED697006F0901 /* GazeEstimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GazeEstimation.cpp; sourceTree = "<group>"; };
+		DC82616E1D6ED697006F0901 /* SVM_dynamic_lin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVM_dynamic_lin.cpp; sourceTree = "<group>"; };
+		DC82616F1D6ED697006F0901 /* SVM_static_lin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVM_static_lin.cpp; sourceTree = "<group>"; };
+		DC8261701D6ED697006F0901 /* SVR_dynamic_lin_regressors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVR_dynamic_lin_regressors.cpp; sourceTree = "<group>"; };
+		DC8261711D6ED697006F0901 /* SVR_static_lin_regressors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVR_static_lin_regressors.cpp; sourceTree = "<group>"; };
+		DC8261721D6ED697006F0901 /* Face_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Face_utils.h; sourceTree = "<group>"; };
+		DC8261731D6ED697006F0901 /* FaceAnalyser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceAnalyser.h; sourceTree = "<group>"; };
+		DC8261741D6ED697006F0901 /* GazeEstimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GazeEstimation.h; sourceTree = "<group>"; };
+		DC8261751D6ED697006F0901 /* SVM_dynamic_lin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVM_dynamic_lin.h; sourceTree = "<group>"; };
+		DC8261761D6ED697006F0901 /* SVM_static_lin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVM_static_lin.h; sourceTree = "<group>"; };
+		DC8261771D6ED697006F0901 /* SVR_dynamic_lin_regressors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVR_dynamic_lin_regressors.h; sourceTree = "<group>"; };
+		DC8261781D6ED697006F0901 /* SVR_static_lin_regressors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVR_static_lin_regressors.h; sourceTree = "<group>"; };
+		DC82619E1D70161E006F0901 /* openface_models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = openface_models; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C35331DB1B7BCE8A003A7521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC240D001D6EB43A00763774 /* CoreData.framework in Frameworks */,
+				DC240CFE1D6EB42F00763774 /* AVFoundation.framework in Frameworks */,
+				DC7C019B1D68E23200E02CB4 /* CoreFoundation.framework in Frameworks */,
+				DC7C019D1D68E36500E02CB4 /* UIKit.framework in Frameworks */,
+				DC240CD81D6E9C0800763774 /* opencv2.framework in Frameworks */,
+				C37509FA1C79388900516C15 /* AIRExtHelpers.framework in Frameworks */,
+				DC240CDA1D6E9C3900763774 /* AssetsLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C302F9371D55105000AB049D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C302F9381D55106200AB049D /* FaceDetectionHelper.h */,
+				C302F9391D55106200AB049D /* FaceDetectionHelper.mm */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		C3073AD51BE2C77C00EC89B7 /* FaceDetection */ = {
+			isa = PBXGroup;
+			children = (
+				DC240C991D6E9B9900763774 /* OpenFace */,
+				C302F9371D55105000AB049D /* Utils */,
+				C37509F81C79388900516C15 /* Frameworks */,
+				C3073AD61BE2C77C00EC89B7 /* FaceDetection.h */,
+				C3073AD71BE2C77C00EC89B7 /* FaceDetection.m */,
+				C3073ADC1BE2C77C00EC89B7 /* Data */,
+				C3073AE01BE2C77C00EC89B7 /* Functions */,
+			);
+			path = FaceDetection;
+			sourceTree = "<group>";
+		};
+		C3073ADC1BE2C77C00EC89B7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C302F9361D550FC600AB049D /* FaceDetectionEvent.h */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C3073AE01BE2C77C00EC89B7 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				C302F9331D550EF000AB049D /* DetectFacesFunction.h */,
+				C302F9341D550EF000AB049D /* DetectFacesFunction.m */,
+				C302F9301D550E2E00AB049D /* SetLogEnabledFunction.h */,
+				C302F9311D550E2E00AB049D /* SetLogEnabledFunction.m */,
+				C302F93B1D57238A00AB049D /* IsAvailableFunction.h */,
+				C302F93C1D57238A00AB049D /* IsAvailableFunction.m */,
+				C302F93E1D5723E500AB049D /* IsOperationalFunction.h */,
+				C302F93F1D5723E500AB049D /* IsOperationalFunction.m */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		C35331D51B7BCE8A003A7521 = {
+			isa = PBXGroup;
+			children = (
+				C3073AD51BE2C77C00EC89B7 /* FaceDetection */,
+				C35331DF1B7BCE8A003A7521 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C35331DF1B7BCE8A003A7521 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C35331DE1B7BCE8A003A7521 /* libFaceDetection.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C37509F81C79388900516C15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC240CFF1D6EB43A00763774 /* CoreData.framework */,
+				DC240CFD1D6EB42F00763774 /* AVFoundation.framework */,
+				DC240CD91D6E9C3900763774 /* AssetsLibrary.framework */,
+				DC240CD71D6E9C0800763774 /* opencv2.framework */,
+				DC7C019C1D68E36500E02CB4 /* UIKit.framework */,
+				DC7C019A1D68E23200E02CB4 /* CoreFoundation.framework */,
+				C37509F91C79388900516C15 /* AIRExtHelpers.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC240C991D6E9B9900763774 /* OpenFace */ = {
+			isa = PBXGroup;
+			children = (
+				DC240C9C1D6E9BAE00763774 /* FaceAnalyzer */,
+				DC240C9B1D6E9BA400763774 /* LandmarkDetector */,
+				DC240C9A1D6E9B9F00763774 /* Models */,
+			);
+			name = OpenFace;
+			sourceTree = "<group>";
+		};
+		DC240C9A1D6E9B9F00763774 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC82619E1D70161E006F0901 /* openface_models */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DC240C9B1D6E9BA400763774 /* LandmarkDetector */ = {
+			isa = PBXGroup;
+			children = (
+				DC240CE71D6EB18D00763774 /* CCNF_patch_expert.cpp */,
+				DC240CE81D6EB18D00763774 /* LandmarkDetectionValidator.cpp */,
+				DC240CE91D6EB18D00763774 /* LandmarkDetectorFunc.cpp */,
+				DC240CEA1D6EB18D00763774 /* LandmarkDetectorModel.cpp */,
+				DC240CEB1D6EB18D00763774 /* LandmarkDetectorParameters.cpp */,
+				DC240CEC1D6EB18D00763774 /* LandmarkDetectorUtils.cpp */,
+				DC240CED1D6EB18D00763774 /* Patch_experts.cpp */,
+				DC240CEE1D6EB18D00763774 /* PAW.cpp */,
+				DC240CEF1D6EB18D00763774 /* PDM.cpp */,
+				DC240CF01D6EB18D00763774 /* stdafx.cpp */,
+				DC240CF11D6EB18D00763774 /* SVR_patch_expert.cpp */,
+				DC240CDB1D6EB18500763774 /* CCNF_patch_expert.h */,
+				DC240CDC1D6EB18500763774 /* LandmarkCoreIncludes.h */,
+				DC240CDD1D6EB18500763774 /* LandmarkDetectionValidator.h */,
+				DC240CDE1D6EB18500763774 /* LandmarkDetectorFunc.h */,
+				DC240CDF1D6EB18500763774 /* LandmarkDetectorModel.h */,
+				DC240CE01D6EB18500763774 /* LandmarkDetectorParameters.h */,
+				DC240CE11D6EB18500763774 /* LandmarkDetectorUtils.h */,
+				DC240CE21D6EB18500763774 /* Patch_experts.h */,
+				DC240CE31D6EB18500763774 /* PAW.h */,
+				DC240CE41D6EB18500763774 /* PDM.h */,
+				DC240CE51D6EB18500763774 /* stdafx.h */,
+				DC240CE61D6EB18500763774 /* SVR_patch_expert.h */,
+			);
+			name = LandmarkDetector;
+			sourceTree = "<group>";
+		};
+		DC240C9C1D6E9BAE00763774 /* FaceAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				DC82616B1D6ED697006F0901 /* Face_utils.cpp */,
+				DC82616C1D6ED697006F0901 /* FaceAnalyser.cpp */,
+				DC82616D1D6ED697006F0901 /* GazeEstimation.cpp */,
+				DC82616E1D6ED697006F0901 /* SVM_dynamic_lin.cpp */,
+				DC82616F1D6ED697006F0901 /* SVM_static_lin.cpp */,
+				DC8261701D6ED697006F0901 /* SVR_dynamic_lin_regressors.cpp */,
+				DC8261711D6ED697006F0901 /* SVR_static_lin_regressors.cpp */,
+				DC8261721D6ED697006F0901 /* Face_utils.h */,
+				DC8261731D6ED697006F0901 /* FaceAnalyser.h */,
+				DC8261741D6ED697006F0901 /* GazeEstimation.h */,
+				DC8261751D6ED697006F0901 /* SVM_dynamic_lin.h */,
+				DC8261761D6ED697006F0901 /* SVM_static_lin.h */,
+				DC8261771D6ED697006F0901 /* SVR_dynamic_lin_regressors.h */,
+				DC8261781D6ED697006F0901 /* SVR_static_lin_regressors.h */,
+			);
+			name = FaceAnalyzer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C35331DD1B7BCE8A003A7521 /* FaceDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C35331F21B7BCE8A003A7521 /* Build configuration list for PBXNativeTarget "FaceDetection" */;
+			buildPhases = (
+				C35331DA1B7BCE8A003A7521 /* Sources */,
+				C35331DB1B7BCE8A003A7521 /* Frameworks */,
+				C35331DC1B7BCE8A003A7521 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceDetection;
+			productName = FaceDetection;
+			productReference = C35331DE1B7BCE8A003A7521 /* libFaceDetection.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C35331D61B7BCE8A003A7521 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = marpies;
+				TargetAttributes = {
+					C35331DD1B7BCE8A003A7521 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = C35331D91B7BCE8A003A7521 /* Build configuration list for PBXProject "FaceDetection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C35331D51B7BCE8A003A7521;
+			productRefGroup = C35331DF1B7BCE8A003A7521 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C35331DD1B7BCE8A003A7521 /* FaceDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C35331DA1B7BCE8A003A7521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C302F9401D5723E500AB049D /* IsOperationalFunction.m in Sources */,
+				C302F9351D550EF000AB049D /* DetectFacesFunction.m in Sources */,
+				DC240CF31D6EB18D00763774 /* LandmarkDetectionValidator.cpp in Sources */,
+				DC240CF91D6EB18D00763774 /* PAW.cpp in Sources */,
+				C302F9321D550E2E00AB049D /* SetLogEnabledFunction.m in Sources */,
+				DC240CFC1D6EB18D00763774 /* SVR_patch_expert.cpp in Sources */,
+				DC82617E1D6ED697006F0901 /* SVR_dynamic_lin_regressors.cpp in Sources */,
+				DC82617D1D6ED697006F0901 /* SVM_static_lin.cpp in Sources */,
+				DC82617F1D6ED697006F0901 /* SVR_static_lin_regressors.cpp in Sources */,
+				DC82617C1D6ED697006F0901 /* SVM_dynamic_lin.cpp in Sources */,
+				DC240CFB1D6EB18D00763774 /* stdafx.cpp in Sources */,
+				DC82617B1D6ED697006F0901 /* GazeEstimation.cpp in Sources */,
+				DC240CF61D6EB18D00763774 /* LandmarkDetectorParameters.cpp in Sources */,
+				DC240CF71D6EB18D00763774 /* LandmarkDetectorUtils.cpp in Sources */,
+				DC240CF41D6EB18D00763774 /* LandmarkDetectorFunc.cpp in Sources */,
+				DC240CF51D6EB18D00763774 /* LandmarkDetectorModel.cpp in Sources */,
+				C302F93A1D55106200AB049D /* FaceDetectionHelper.mm in Sources */,
+				C302F93D1D57238A00AB049D /* IsAvailableFunction.m in Sources */,
+				DC240CF21D6EB18D00763774 /* CCNF_patch_expert.cpp in Sources */,
+				DC82617A1D6ED697006F0901 /* FaceAnalyser.cpp in Sources */,
+				DC240CF81D6EB18D00763774 /* Patch_experts.cpp in Sources */,
+				DC240CFA1D6EB18D00763774 /* PDM.cpp in Sources */,
+				DC8261791D6ED697006F0901 /* Face_utils.cpp in Sources */,
+				C3073AE41BE2C77C00EC89B7 /* FaceDetection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C35331F01B7BCE8A003A7521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C35331F11B7BCE8A003A7521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C35331F31B7BCE8A003A7521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_IDENTITY = "";
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaceDetection/Frameworks",
+					"$(PROJECT_DIR)/FaceDetection",
+					"$(PROJECT_DIR)",
+				);
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/FaceDetection/lib";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/dlib",
+					"$(SRCROOT)/dlib",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = NO;
+				STRIP_STYLE = all;
+			};
+			name = Debug;
+		};
+		C35331F41B7BCE8A003A7521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_IDENTITY = "";
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaceDetection/Frameworks",
+					"$(PROJECT_DIR)/FaceDetection",
+					"$(PROJECT_DIR)",
+				);
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/FaceDetection/lib";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/dlib",
+					"$(SRCROOT)/dlib",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = NO;
+				STRIP_STYLE = all;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C35331D91B7BCE8A003A7521 /* Build configuration list for PBXProject "FaceDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35331F01B7BCE8A003A7521 /* Debug */,
+				C35331F11B7BCE8A003A7521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C35331F21B7BCE8A003A7521 /* Build configuration list for PBXNativeTarget "FaceDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35331F31B7BCE8A003A7521 /* Debug */,
+				C35331F41B7BCE8A003A7521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C35331D61B7BCE8A003A7521 /* Project object */;
+}

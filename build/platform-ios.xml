@@ -1,0 +1,20 @@
+<platform xmlns="http://ns.adobe.com/air/extension/20.0">
+    <linkerOptions>
+        <option>-framework CoreImage</option>
+        <option>-framework CoreData</option>
+        <option>-framework ImageIO</option>
+        <option>-framework QuartzCore</option>
+        <option>-framework AVFoundation</option>
+        <option>-framework Accelerate</option>
+        <option>-framework AssetsLibrary</option>
+        <option>-ios_version_min 8.0</option>
+        <option>-liconv</option>
+        <option>-lc++</option>
+    </linkerOptions>
+
+    <packagedDependencies>
+        <packagedDependency>AIRExtHelpers.framework</packagedDependency>
+        <packagedDependency>opencv2.framework</packagedDependency>
+        <packagedDependency>libdlib.a</packagedDependency>
+    </packagedDependencies>
+</platform>
