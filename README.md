@@ -1,4 +1,4 @@
-# openfaceANE
+# OpenFace Mobile
 Mobile Extension for using OpenFace library for prototype experiences.
 
 #Archived
