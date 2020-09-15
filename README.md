@@ -1,5 +1,5 @@
 # openfaceANE
-Native Extension for using OpenFace on mobile
+Mobile Extension for using OpenFace library for prototype experiences.
 
 #Archived
 
